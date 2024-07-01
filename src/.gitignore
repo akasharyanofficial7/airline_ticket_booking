@@ -1,0 +1,22 @@
+# Dependencies
+/node_modules
+npm-debug.log
+yarn-error.log
+
+src.config/config.js
+# Production build
+/build
+/dist
+
+# Environment files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE files
+/.idea
+/.vscode
+
+# OS generated files
+.DS_Store
