@@ -12,5 +12,6 @@ app.listen(PORT, async () => {
   console.log(` the port is ${PORT}`);
 
   const cityRepo = new CityRepository();
-  cityRepo.deleteCity(1);
+  cityRepo.getCity(50, "bombay");
+  console.log(cityRepo);
 });
