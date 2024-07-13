@@ -1,11 +1,13 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
-
+const ApiRoutes = require("./routes/index");
 const CityRepository = require("./repository/city-repository.js");
 const { City } = require("./models/index.js");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use("/api", ApiRoutes);
 const { PORT } = require("./config/configServer");
 
 app.listen(PORT, async () => {
