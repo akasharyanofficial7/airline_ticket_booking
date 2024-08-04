@@ -55,19 +55,20 @@ class CityRepository {
 
   async getAllCities(filter) {
     try {
-      let cities;
       if (filter.name) {
-        cities = await City.findAll({
+        const cities = await City.findAll({
           where: {
             name: {
               [Op.startsWith]: filter.name,
             },
           },
         });
+
+        return cities;
       } else {
         cities = await City.findAll();
+        return cities;
       }
-      return cities;
     } catch (error) {
       console.log("Error fetching city:", error.message);
       throw error;
