@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const app = express();
 const ApiRoutes = require("./routes/index");
 const CityRepository = require("./repository/city-repository.js");
-const { City } = require("./models/index.js");
+const { City, Airport } = require("./models/index.js");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -16,4 +16,7 @@ app.listen(PORT, async () => {
   // const cityRepo = new CityRepository();
   // cityRepo.getCity(50);
   // console.log(cityRepo);
+
+  // const airports = await City.findAll();
+  // console.log(airports);
 });
