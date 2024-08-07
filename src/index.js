@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const app = express();
 const ApiRoutes = require("./routes/index");
 const CityRepository = require("./repository/city-repository.js");
-// const { City, Airport } = require("./models/index.js");
+const { Airplane } = require("./models/index.js");
 const db = require("./models/index.js");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -21,7 +21,12 @@ app.listen(PORT, async () => {
   // const airports = await City.findAll();
   // console.log(airports);
 
-  if (process.env.SYNC_DB) {
-    db.sequelize.sync({ alter: true });
-  }
+  // if (process.env.SYNC_DB) {
+  //   db.sequelize.sync({ alter: true });
+  // }
+  // await Airplane.destroy({
+  //   where: {
+  //     modelNumber: "A2020M",
+  //   },
+  // });
 });

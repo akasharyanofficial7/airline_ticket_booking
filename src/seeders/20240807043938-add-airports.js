@@ -17,34 +17,34 @@ module.exports = {
       "Airports",
       [
         {
-          name: "noida international Airport",
-          cityId: 60,
+          name: " lalau international Airport",
+          cityId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
 
         {
-          name: "delhi international Airport",
-          cityId: 59,
+          name: " gandhi international Airport",
+          cityId: 3,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          name: "kolkata international Airport",
-          cityId: 61,
+          name: " indra international Airport",
+          cityId: 3,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
 
         {
           name: "Nehru international Airport",
-          cityId: 61,
+          cityId: 4,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          name: "Nehru1 international Airport",
-          cityId: 61,
+          name: " bhagat singh international Airport",
+          cityId: 2,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
